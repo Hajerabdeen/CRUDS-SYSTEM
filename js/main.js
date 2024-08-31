@@ -17,7 +17,7 @@ if (localStorage.getItem("product") != null) {
 //display data function
 function addBtn() {
   if(IsEmpty()){
-    if(addUpdateBtn.innerHTML == "Add Product"){
+    if(addUpdateBtn.innerHTML.trim() == "Add Product"){
       if(testName() && testPrice()){
         getAddData();
       }else{
